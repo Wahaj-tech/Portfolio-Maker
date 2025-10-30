@@ -1,0 +1,21 @@
+smooth scrolling-->
+1.first search locomotive js github
+2.then scroll down  goto usage and then css and click the link and then copy the entire code 
+3.create another file loco.css and paste that code there.
+4.now go back to usage and scroll down and goto smooth then copy ->
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+and make script.js file and paste the code there
+5.instead of [data-scroll-container] change this to '#main' as our whole website is in main...
+
+6.Now we want a locomotive script so now goto google and search locomotive js cdn then go to locomotive-scroll.min.js and copy the url and attach this to html file.
+<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+
+
+GSAP---->(it is for animation)
+1.search gsap cdn and open the website
+2.copy the first ever link
+3.<srcipt src="paste link"></script>
+on html

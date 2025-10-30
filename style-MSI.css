@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"General Sans" ;
+    color: rgb(255, 255, 255, 0.708);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    
+}
+#minicircle{
+    
+    width: 10px;
+    height:10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;/*so that text or images k upr visible ho */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+#main{
+    background-color: black;
+    width: 100%;
+}
+.bounding{
+    width: fit-content ;/*jitna content hoga utna hi width*/
+    overflow: hidden;/*joh PRODUCT neeche gya tha jpoh dikhna bnd ho jayega*/
+ }
+.bounding .boundingelem{
+    transform: translateY(100%);
+    
+}
+#hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;/*screen k bara bar */
+    background-color: black;
+}
+#nav{
+    
+    color: rgba(255, 255, 255, 0.708);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+#nav a{
+    color: rgba(255, 255, 255, 0.708);
+    text-decoration:none ;/*it will remove underline */
+    font-size: 20px;
+}
+#heading{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#heading h1{
+    font-family: "General Sans Medium";
+    font-size: 10vw; /*it sets text according to the screen size that's why we prefer 'vw'*/
+    text-transform: uppercase;
+    font: weight 900;
+    line-height: 1; /*to remove spacing btw Product and designer and h5*/
+}
+#heading #secondh1{
+    margin-left: 150px;
+}
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: end;
+    
+}
+.blocktext h5{
+    text-align: right;
+    font-size: 15px;
+}
+#chotiheading{
+    margin-top: 100px;
+    padding-right: 30px;
+    display: flex;/*isse dono h5 agl bgl ho jayega*/
+    flex-direction: column;/*isse dono h5 upr neeeche ho jayenge*/
+    align-items: end;/*important:isse ;last m pahuch jayega*/
+}
+
+#chotiheading h5{
+    text-align: right;
+    font-size: 1.3vw;
+}
+#herofooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    /*poore herofooter ko neeche lane k liye --->*/
+    position: absolute;
+    bottom: 0;
+}
+#herofooter a{
+    text-decoration: none;
+    font-weight: 800;
+}
+#herofooter .circle{
+    width:25px;
+    height: 25px;
+    background-color: rgba(240, 248, 255, 0.205);
+    border-radius: 50%;
+    text-align: center;
+    
+}
+#iconset{
+    display: flex;
+    gap: 5px;
+} 
+#second{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 2vw; /*this is to set border line in center and padded from left anf right*/
+    padding-top: 150px;
+    
+}
+.elem {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+.elem img{
+    
+    width: 150px;
+    height: 150px; 
+    z-index: 999;
+    position: absolute;
+    opacity: 0;
+    /*image ko hide krr diya h*/
+}
+#lastelem{
+    border-bottom: 1px solid #888;
+}
+#about{
+    padding: 2vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+    gap: 5vw;
+}
+#about img{
+    width: 12.5vw;
+}
+#textabout{
+    width: 20rem;
+}
+#textabout h5{
+    border: 1px solid #888;
+    border-radius: 1.5rem;
+    width: 7rem;
+    text-align: center;
+    padding: 3px;
+}
+#textabout button {
+    margin-top: 1rem;
+    background-color: rgb(15, 67, 239);
+    color: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    
+}
+#textabout button:hover{
+    transform: scale(1.2);
+}
+
+#subscribe{
+    background-color: black;
+    padding-top: 15rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+#footer{
+    
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 30px 20px 30px; 
+    font-weight:900;
+}
+#footerleft{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+}
+#footerright{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
